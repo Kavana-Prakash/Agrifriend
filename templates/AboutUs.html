@@ -1,0 +1,98 @@
+{% extends 'Base.html' %}
+
+{% block body %}
+
+<style>
+	html body {
+	  background-color: rgb(164, 238, 164);
+	}
+
+#websites {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#websites td, #websites th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#websites tr:nth-child{background-color: #f2f2f2;}
+
+#websites tr:hover {background-color: #ddd;}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link
+a:visited {
+  color: rgb(5, 7, 5);
+} */
+
+/* mouse over link */
+a:hover {
+  color: rgb(253, 52, 85);
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+#websites th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+  </style>
+
+<section class="py-5">
+	<div class="container py-md-4">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> About Us</h3>
+		<div class="row core-grids">
+			<div class="col-lg-6">
+				<img src="{{ url_for('static', filename='images/abt_us.jpg') }}" class="img-fluid" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<h3 class="mt-4" style="color: black; font-size: 24px;"> Agriculture is the backbone of the Indian Economy"- said Mahatma Gandhi six decades ago.</h3>
+				<p class="font-weight-bold mt-3" style="color: black; font-size: 18px;">Even today, the situation is still the same, with almost the entire economy being sustained by agriculture, which is the mainstay of the villages.
+					It contributes 16% of the overall GDP and accounts for employment of approximately 52% of the Indian population.
+					Rapid growth in agriculture is essential not only for self-reliance but also to earn valuable foreign exchange.
+					It is felt that with provision of timely and adequate inputs such as fertilizers, seeds, pesticides and by making available affordable agricultural credit /crop insurance, Indian farmers are going to ensure food and nutritional security to the Nation.
+				In this regard this website is going to provide a small help for farmers to take right steps.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="py-5">
+	<div class="container py-md-4">
+
+		<h3 class="heading mb-sm-5 mb-4 text-center"><b>AGRICULTURE WEBSITES IN INDIA</b></h3>
+		<div class="row">
+		<table id="websites" class="table table-striped">
+		<tr><th>Agriculture Websites</th><th>URL</th></tr>
+		<tr><td>Department of Agriculture, Cooperation and Farmers Welfare</td><td><a href="http://agricoop.nic.in/" target="_blank">http://agricoop.nic.in/</a></td></tr>
+		<tr><td>For Indian Agriculture College/Universities News</td><td><a href="http://agricollegenews.com/" target="_blank">http://agricollegenews.com/ </a></td></tr>
+		<tr><td>Agricultural and Processed Food Export Development Authority</td><td><a href="http://apeda.in/apedawebsite/" target="_blank">http://www.apeda.in</a></td></tr>
+		<tr><td>UpAgriculture.org</td><td><a href="http://www.upagriculture.org/" target="_blank">http://www.upagriculture.org/</a></td></tr>
+		<tr><td>For Agriculture Insurance</td><td><a href="http://agriinsurance.com/" target="_blank">http://agriinsurance.com/</a></td></tr>                            
+		<tr><td>For AgTech News</td><td><a href="http://agtechnews.com/" target="_blank">http://agtechnews.com/ </a></td></tr>
+		<tr><td>Ministry of Rural Development</td><td><a href="http://rural.nic.in" target="_blank">http://rural.nic.in</a></td></tr>
+		<tr><td>For Indian Agriculture Retailers</td><td><a href="http://agriretailers.com/" target="_blank">http://agriretailers.com/</a></td></tr>
+		<tr><td>Indian Society of Agribusiness Professionals</td><td><a href="http://www.isapindia.org/isap/" target="_blank">http://www.isapindia.org/isap/</a></td></tr>
+		<tr><td>Farmers’ Portal</td><td><a href="http://farmer.gov.in/" target="_blank">http://farmer.gov.in/</a></td></tr>
+		<tr><td>For Tractor News, Tractor Loans, Tractor Insurance</td><td><a href="http://tractorbuyersguide.in/" target="_blank">http://tractorbuyersguide.in/</a></td></tr>
+		<tr><td>For Agriculture Jobs</td><td><a href="http://www.indiaagrijobs.com/" target="_blank">http://www.indiaagrijobs.com/</a></td></tr>
+		<tr><td>india.gov.in National Portal of India</td><td><a href="http://india.gov.in/topics/agriculture" target="_blank">http://india.gov.in/topics/agriculture</a></td></tr>
+		<tr><td>mKisan (Help through mobile messaging for farmers)</td><td><a href="http://mkisan.gov.in/" target="_blank">http://mkisan.gov.in/</a></td></tr>
+		</table>
+		</div>
+
+	</div>
+</section>
+
+{% endblock %}

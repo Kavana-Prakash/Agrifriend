@@ -1,0 +1,44 @@
+
+{% extends 'Base.html' %} {% block body %}
+
+<style>
+	html body {
+	  background-color: rgb(164, 238, 164);
+	}
+  </style>
+
+<div class="container py-2 mx-auto my-50 h-10 " style="margin: 9rem;">
+  <div class="row">
+      <div class="col-sm py-2 py-md-3">
+          <div class="card card-body" style="justify-content: center; background-color:rgb(128, 245, 128)">
+            <p class="text-center" style="color: black; font-size: 22px;">{{ prediction }}</p>
+            <center>
+              <h1><p class="text-center" style="color: black; font-size: 22px;"> 
+                  <b>Fertilizer or Supplements</b>
+              </p></h1>
+              <br>
+              <img src={{simage}} width="300" height="350">
+              <br>
+              <br>
+              <p class="text-center" style="color: black; font-size: 22px;">
+              {{sname}}</p>
+        
+              <a target="_blank" href={{buy_link}}><button type="button" class="btn btn-success"
+                  style="background-color: #014f3f;">Buy Product</button></a>
+            </center>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- <div class="col mx-auto"">
+  <div class=" p-5 bg-white shadow rounded-lg" style="height: 95%;">
+    
+  </div>
+</div> -->
+
+
+
+
+</div>
+{% endblock %}
